@@ -1,0 +1,14 @@
+<div class="container">
+  <hello name="{{ name }}"></hello>
+  <h2>Get data from Server</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <table class="table border-primary table-warning">
+        <tr *ngFor="let user of users" >
+          <td class="table-warning">{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
